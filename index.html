@@ -1,0 +1,133 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <title>Meet & Greet </title>
+</head>
+
+<body>
+    <div class="contenedor">
+    <header class="header">
+      <h1> MEET & GREET </h1> 
+     <img src="img/logo.png" width="100%" >
+    </header>
+
+    <section>
+<div class="fondo"> 
+            <div class="slider"> 
+           <img class="mySlides" src="img/slider.jpg" alt=""  width="100%"> 
+            
+           <img class="mySlides" src="img/slider 2.jpg" alt="" width="100%"> 
+            
+           <img class="mySlides" src="img/slider 3.jfif" alt="" width="100%"> 
+           </div>
+    </div>
+    <h2>19 DE NOVIEMBRE</h2>
+<div class="info">
+  <div><h3><i class="fa fa-star"></i><br>Entrada <br>Platinum o Gold</h3></div>
+  <div><h3><i class="fa fa-star"></i><br>Merchandising <br>exclusivo</h3></div>
+  <div><h3><i class="fa fa-star"></i><br>Cuaderno con autografo</h3></div>
+</div>
+<div class="info2">
+    <div><h3><i class="fa fa-star"></i><br>Fotografia con <br>el artista</h3></div>
+    <div><h3><i class="fa fa-star"></i><br>Album o vinilo <br>de regalo</h3></div>
+</div>
+
+
+    <h2>CONQUISTA A TAYLOR</h2>
+  <div class="texto">  
+    <p>Rellenando el formulario con tus datos, tenes la oportunidad de enviarle un mensaje 
+        a Taylor y participar del lanzamiento de su último disco. </p>
+</div>
+
+<div class="data">
+    <form id="form" action="luciagilardoni2002@gmail.com" method="post">
+<div>
+<span>Nombre</span>
+<input type="text" name="nombre" required>
+</div>
+<div>
+<span>Apellido</span>
+<input type="text" name="apellido" required>
+</div>
+<div>
+<span>Telefono</span>
+<input type="tel" name="telefono" required>
+</div>
+<div>
+<span>Fecha de nacimiento</span>
+<input type="date" name="Fecha" required>
+</div>
+<div>
+<span>Email</span>
+<input type="email" name="email" required>
+</div>
+<div>
+    <span> ¡Mensaje para Taylor!</span>
+    <textarea name=" consulta" id="" ></textarea>
+    </div>
+<div>
+<button>Enviar</button>
+</div>
+
+        </form>
+        </div>
+    
+    </section>
+    <footer class="footer">
+<h4> <a href="https://facebook.com/TaylorSwift" target="_blank"><i class="fa fa-facebook"></i></a> 
+    <a href="https://instagram.com/taylorswift" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://snapchat.com/add/taylorswift" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
+    <a href="https://youtube.com/taylorswift" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://twitter.com/taylorswift13" target="_blank"><i class="fa fa-twitter"></i></a>
+</h4>
+<h3> © 2021 Taylor Swift. Todos los derechos reservados - Política de Privacidad </h3>
+    </footer>
+</div>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+        var i;
+        // acá define qué elemento entra en el slider
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        x[slideIndex-1].style.display = "block"; 
+    }
+        
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 2000); // Cambia la imagen cada 2 segundos
+    }
+    </script>
+
+</body>
+</html>
+

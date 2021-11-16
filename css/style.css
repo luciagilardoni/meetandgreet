@@ -1,0 +1,106 @@
+*{padding: 0;margin: 0;}
+body {background-image: url("fondo.png.jpg");
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-attachment: fixed;
+    background-size: cover;}
+
+.header {background-color: #d9bea9; color: #8c332c;margin-top: 1.5%;padding: 10px;
+    width: 80%;
+    box-sizing: border-box;display: flex;
+    flex-flow: wrap;margin-left: auto;margin-right:auto}
+.header h1 {text-align: center;font-size: 100px;width: 70%;font-family: 'Anton', sans-serif; letter-spacing: 0.1em ;
+    transform: rotate(-2.5deg);font-style: italic;}
+.header img {width: 20%;}
+
+.slider {padding: 20px;width: 80%;box-sizing: border-box;margin:auto;background-color:#8c332c}
+.fondo {background-color:#8c332c; width: 80%;margin-top: 2%;margin-bottom: 2%;margin-left: auto;margin-right: auto;}
+
+h2 {text-align: center;font-size: 70px;width: 80%;font-family: 'Anton', sans-serif; letter-spacing: 0.4em ;
+    font-style: italic;color: #d9bea9;margin: 5% auto 3% auto;}
+
+.info {width: 100%;display: flex; flex-flow: wrap;}
+.info div 
+{background-color: #d9bea9;
+    color:#8c332c;
+    width: 20%;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    height: 290px;
+margin: auto;}
+.info h3 {margin-top: 60px;font-size: 30px;text-align:center;font-family:'Comfortaa', cursive;font-style: italic;}
+.info h3 i {font-size: 80px;}
+
+.info2 {width: 70%;display: flex; flex-flow: wrap;margin: auto;}
+.info2 div 
+{background-color: #d9bea9;
+    color:#8c332c;
+    width: 30%;
+    padding: 2px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+    height: 290px;
+margin: auto}
+.info2 h3 {margin-top: 60px;font-size: 30px;text-align:center;font-family:'Comfortaa', cursive;font-style: italic;}
+.info2 h3 i {font-size: 80px;}
+
+.texto {background-color: #8c332c;;
+    color:#d9bea9;width: 80%; margin: auto;padding: 20px;}
+.texto p {font-family:'Comfortaa', cursive;font-style: italic; font-size: 25px;text-align: center;}
+
+.data {width: 40%;
+    margin: 1% auto 5% auto;
+font-family:'Comfortaa', cursive; }
+
+
+#form {
+    background-color:#d9bea9;color: #8c332c;
+    padding: 17px;
+    border-radius: 10px;}
+ #form button {
+        width: 20%;
+        padding: 5px;
+        margin:auto;
+        
+        border-radius: 10px;
+        border: none;}
+#form button:hover
+{background-color:#8c332c}
+#form input {
+        width: 100%;
+        padding: 9px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: none;}
+
+#form select {
+        width: 100%;
+        padding: 9px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: none;}
+#form div {
+        margin-bottom: 15px;}
+ #form textarea {
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: none;
+       resize: none;}
+.footer
+{background-color:#d9bea9;width: 100%;padding: 10px;margin: auto; box-sizing: border-box;}
+
+footer h4 {color:#8c332c;font-size: 35px;text-align:center;margin:auto}
+footer h4 a {text-decoration: none;color:#8c332c;font-size: 25px;}
+footer h3 {color:black;font-size: 15px;text-align:center;font-family:'Comfortaa', cursive;font-style: italic;
+margin: auto; padding: 10px;}
